@@ -340,7 +340,6 @@ width: 70px;
 .pw-content{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax 250px, auto);
-
 }
 
 .eins-modal-text p{
