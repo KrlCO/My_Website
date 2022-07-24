@@ -9,25 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
+    <link rel="stylesheet" href="style.css"> 
 
 </head>
 
 <body>
-<header>
-    <div class="container">
-        <div class="container2">
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Briefcase</a></li>
-                    <li><a href="#about-me">About me</a></li>
 
-                </ul>
-            </nav>
-        </div>
+<header>
+    <div class="navbar container2">
+        <nav>
+            <ul>
+                <li><a href="#homepage">Home</a></li>
+                <li><a href="#briefcase">Briefcase</a></li>
+                <li><a href="#about-me">About me</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section>
+    <div class="container" id="homepage">
+        <div class="container2">
+    
         <img src="./img/fondo.jpg" alt="">
     </div>
 </div>
@@ -39,14 +43,15 @@
     <div class="square-text">CARLOS CERQUIN OROPEZA</div>
     <div class="square-text2"><span>Backend Developer | Pentester</span></div>
     <div class="contact-icon">
-        <a href="https://github.com/KrlCO"><img src="./img/Github2.svg" alt=""></a>
-        <a href="https://www.linkedin.com/in/carlos-cerquin-oropeza-qwerty666/"><img src="./img/linkedin-svgrepo-com.svg" alt=""></a>
-        <a href=""><img src="./img/mail.png" alt=""></a>
+        <a href="https://github.com/KrlCO" target="_blank"><img src="./img/Github2.svg" alt=""></a>
+        <a href="https://www.linkedin.com/in/carlos-cerquin-oropeza-qwerty666/"target="_blank"><img src="./img/linkedin-svgrepo-com.svg" alt=""></a>
+        <a data-modal-id="message"><img src="./img/mail.png" alt=""></a>
     </div>
     <div class="square-text3"><a href="#about-me"><span>About me | </span>About me</a></div>
 
 </div>
-</header>
+</section>
+<div class="briefcase"></div>
 
 <section class="briefcase" id="briefcase">
     <div class="briefcase-section container2">
@@ -59,11 +64,8 @@
             <div><img src="" alt=""></div>
             <div><img src="" alt=""></div>
             <div><img src="" alt=""></div>
-
         </div>
-
     </div>
-
 </section>
 
 <section class="skills">
@@ -151,7 +153,7 @@
 
 </section>
 
-<section class="about">
+<section class="about" id="about-me">
     <div class="about-flex container2">
         <div class="about-info">
             <p>Mi nombre es Carlos Cerquín Oropeza, Soy programador Backend enfocado en aplicaciones y desarrollo web.
@@ -165,7 +167,7 @@
         <div class="social">
             <a href="#"><img src="./img/Github2.svg" alt=""></a>
             <a href="#"><img src="./img/linkedin-svgrepo-com.svg" alt=""></a>
-            <a href="#"><img src="./img/mail.png" alt=""></a>
+            <a data-modal-id="message"><img src="./img/mail.png" alt=""></a>
             <a href="#"><img src="" alt=""></a>
 
         </div>
@@ -178,9 +180,9 @@
                 <span>Videos de desarrollo de proyectos</span></a>
         </div>
         <div>
-                <a href="" target="blank">
+                <a href="https://github.com/KrlCO/My_Website.git" target="_blank">
                 <img src="" alt="">
-                <span>Repositorio de esta web </span></a>
+                <span>/ Repositorio de esta web </span></a>
         </div>
     </div>
 
@@ -214,7 +216,7 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium dicta, repudiandae explicabo corrupti officiis harum quod nisi numquam atque eum, non assumenda itaque mollitia rerum optio quaerat. Est, deleniti aliquid?</p>
                     
                     <div class="eins-modal-text-2">
-                        <span>Link:</span><a href="#"></a>
+                        <span>Link:</span><a href="/"></a>
                     </div>
                     <div class="eins-modal-text-3">
                         <span>Conocimientos Usados</span>
@@ -229,9 +231,23 @@
     </div>
 </div>
 
+<div id="message" class="eins-modal" data-options="openTransition: expandIn; openDuration:200;" >
+    <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <form class="form" action="https://formspree.io/f/{form_id}" method="post">
+            <label for="email">Your Email:
+            <input name="Email" id="email" type="email">
+            </label>
 
+            <label for="">Your message:
+                <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Send</button>
+          </form>
+    </div>
+</div>
 
-<script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
+ <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script> 
 </body>
 
 </html>
