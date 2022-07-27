@@ -141,6 +141,17 @@ transition: transform 0.2s ease;
     top: 70px;
 
 }
+.circle-trans{
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border: solid 30px var(--primary);
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    z-index: 19;
+    top: 90px;
+
+}
 
 .circle-trans{
     width: 290px;
@@ -152,8 +163,18 @@ transition: transform 0.2s ease;
     transition: all 500ms; 
     z-index: 19;
     top: 90px;
+    animation: rotate 2s infinite;
 
 
+}
+
+@keyframes rotate {
+    from{
+    transform : Scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 
 .circle{
