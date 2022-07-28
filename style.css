@@ -66,10 +66,6 @@ body{
 
     background-color: var(--dark2);
     position: relative;
-    /* display: block;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-    transition: all 1000ms; */
 }
 
 

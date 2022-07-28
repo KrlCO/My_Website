@@ -18,16 +18,16 @@ module.exports = {
      module: {
         rules:[
             {
-            test: /\.css$/i,
-            use: [MiniCssExtractPlugin.loader, 'css-loader'],
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, "css-loader"],
             },
             {
             test:/\.html$/i,
             use:['html-loader'],  
             },
             {
-            test: /\.(png|svg|jpg|jpeg|gif)$/,
-            type: 'asset/resource',
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
             }
         ],
     }, 
